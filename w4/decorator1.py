@@ -16,7 +16,7 @@ def test1():
 def test2():
     print("test2")
 
-@timer
+@timer #test3=timer(test3)
 def test3():
     print("test3")
 
