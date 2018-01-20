@@ -16,10 +16,16 @@ def test1():
 def test2():
     print("test2")
 
+@timer
+def test3():
+    print("test3")
+
 test1()
 test2()
+#test3()
 print("------添加功能后-------")
 test1=timer(test1)
-test2=timer(test2)
 test1()
+test2=timer(test2)
 test2()
+test3()
