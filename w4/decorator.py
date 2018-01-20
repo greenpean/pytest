@@ -10,7 +10,16 @@ import time
 
 def test1():
     print("test1")
-    time.sleep(3)
+    #time.sleep(3)
+
+def deco(func):
+    print("add new func")
+    return func
+
+test1()
+print("------添加功能后-------")
+test1=deco(test1)
+test1()
 
 
 
